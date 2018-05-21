@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Yalla Karthoum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css?family=Karla:700);
+            *{
+                margin:0;
+                padding:0;
+            }
+            html,body{
+                width:100%;
+                height:100%;
+                min-height:100%;
+                font-family: "Karla",sans-serif;
+                font-size: 5vw;
+                color:#fff;
+                position:relative;
+            }
+            
+            body{
+                background:#f1adb2;
+                transition: background 1s ease;
+            }
+            .infiniteScroll,.jscroll-inner,.jscroll-added{
+               position:relative;
+               line-height: 1.7em;
+            }
+            .content{
+                position:absolute;
+                width:20%;
+                left:50%;
+                right:50%;
+                margin-left:-11%;
+                margin-top:5vh;
+                text-align: center;
+                top:0;
+            }
+            .content h1{
+                color:#85eccf;
+            }
+           /* .pink{
+                background-color:#f0acb2;
+            }
+            .green{
+                background-color:#84eccf;
+            }
+            .blue{
+                background-color:#7598e7;
+            }
+
+            .purple{
+                background-color:#f0bdff;
+            }
+            
+            .yellow{
+                background-color:#f6d270;
+            }*/
+            section.scrollitem{
+                height:100vh;
+                position:relative;
+                box-sizing: content-box;
+                padding:15vh 10vw;
+            }
+            
+            section img{
+               
+                max-width: 50%;
+                max-height:80%;
+            }
+            section.scrollitem:nth-child(odd){
+                text-align: right;
+            }
+            .social{
+                position:absolute;
+                left:-9vw;
+                top:30%;
+                
+                 transform: rotate(-90deg);
+            }
+            .social a{
+                color:#fff;
+               margin-right:2vh;
+                text-decoration: none;
+                font-size: 2vw;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+       
+        <div class="infiniteScroll">
+            
+        <section class="pink scrollitem" data-background="#f0acb2">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <img src="images/8.jpg" alt="" class="contentImg" style="margin-right:-9vw;">
+        </section>
+        <section class="green scrollitem" data-background="#84eccf">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <img src="images/2.jpg" alt="" class="contentImg">
+        </section>
+        <section class="blue scrollitem" data-background="#7598e7">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <img src="images/3.jpg" alt="" class="contentImg">
+        </section>
+        <section class="purple scrollitem" data-background="#f0bdff">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <img src="images/4.jpg" alt="" class="contentImg">
+        </section>
+        <section class="yellow scrollitem" data-background="#f6d270" style="text-align:center;">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <iframe src="https://player.vimeo.com/video/169258137?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+            
+        </section>
+            <nav id="pagination">
+             <a id="next" href="index_1.html">more content</a>
+        </nav>
+              <section class="content">
+            <article>
+                <h1>Yalla!<br>Khartoum</h1>
+                <p>is a community of people coming together to support and celebrate urban arts and youth cultures in the context of an intercultural exchange.                     
+                </p>
+                
+            </article>           
+        </section>    
+        </div>
+        
+        
+        
+        <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.scrollify.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.jscroll.js" type="text/javascript"></script>
+        <script src="scripts/jquery.scrollie.min.js" type="text/javascript"></script>
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </body>
+</html>

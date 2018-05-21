@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Yalla Karthoum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <style type="text/css">
+             @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+            *{
+                margin:0;
+                padding:0;
+            }
+            html,body{
+                width:100%;
+                height:100%;
+                min-height:100%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2vw;
+                color:#fff;
+                
+            }
+            #wrapper{
+                background:url("images/dummy.jpg") no-repeat top left;
+                background-size: cover;
+                position:fixed;
+                height:100%;
+                width:100%;
+                
+            }
+            .logo img{
+                height:30vh;
+            }
+            .logo.sm img{
+                height:10vh;
+            }
+            section{
+                height:100%;
+                text-align: center;
+                position:relative;
+                
+            }
+             .social{
+                position:absolute;
+                left:-4vw;
+                top:40%;
+                
+                 transform: rotate(-90deg);
+            }
+            .social a{
+                color:#fff;
+               margin-right:2vh;
+                text-decoration: none;
+                font-size: 1vw;
+            }
+            #film{
+                width:40vw;
+                height:22.5vw;
+                
+            }
+            .content{
+                width:40vw;
+                margin:0 auto;
+                padding-top:2vh;
+                border-top:#000 1px solid;
+            }
+            .content a{
+                color:#fff;
+                font-size: 1.5em;
+            }
+            #container {
+                height:80vh;                
+                overflow-x:scroll;
+                width:90vw;
+                position: relative;
+                   background-color:rgba(0,0,0,0.3);
+                padding:1vw;
+                   box-sizing:border-box;
+                margin:1vw auto;
+            }
+            .grid{
+                
+                text-align: center;
+             
+                box-sizing:border-box;
+                
+            }
+            .grid-sizer,
+.grid-item { width: 33%; }
+            .grid-item  { 
+                float: left;
+  width: 33%;
+                padding:1vw;
+                box-sizing: border-box;                                
+                overflow:hidden;
+                position:relative;
+            }
+            .grid-item--width2 { width: 66% }
+            
+            .grid-item  img{
+                
+                max-height:100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="fullpage">
+            <section class="section">
+                <div class="social"><a href="https://www.facebook.com/yallakhartoumsudan/">facebook</a> <a href="https://www.instagram.com/yallakhartoum/">instagram</a></div>
+                <div class="logo">
+                <img src="images/yalla-karthoum-logo.png" alt="">
+                </div>
+                <div class="content">
+                <iframe src="https://player.vimeo.com/video/169258137?title=0&byline=0&portrait=0" id="film" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="section">
+                <div class="social"><a href="https://www.facebook.com/yallakhartoumsudan/">facebook</a> <a href="https://www.instagram.com/yallakhartoum/">instagram</a></div>
+                <div class="logo sm">
+                <img src="images/yalla-karthoum-logo.png" alt="">
+                </div>
+                <div id="container">
+                <div class="grid">
+                     <div class="grid-sizer"></div>
+                    <div class="grid-item"><p><span style="color:#f6d270;">Yalla! Khartoum</span> is a community of people</p></div>                    
+                    <div class="grid-item grid-item--width2"><img src="images/1.jpg" alt="" class="contentImg"></div>                                        
+                    
+                    <div class="grid-item colspan-2"><img src="images/3.jpg" alt="" class="contentImg"></div>
+                    <div class="grid-item"><p>coming together to support and</p></div>
+                    <div class="grid-item rowspan-2"><img src="images/2.jpg" alt="" class="contentImg"></div>
+                    <div class="grid-item grid-item--width2"><img src="images/4.jpg" alt="" class="contentImg"></div>
+                    <div class="grid-item"><p>celebrate urban arts and youth cultures</p></div>
+                    
+                    <div class="grid-item grid-item--width2"><img src="images/6.jpg" alt="" class="contentImg"></div>
+                    <div class="grid-item"><img src="images/5.jpg" alt="" class="contentImg"></div>
+                    <div class="grid-item"><p>in the context of an intercultural exchange.</p></div>
+                    
+                  </div>
+                    </div>
+                
+            </section>
+            <section class="section">
+                
+                <div class="logo sm">
+                <img src="images/yalla-karthoum-logo.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Full blown Website coming soon.<br>In the meanwhile, stay in touch...</h2>
+                    <p style="text-align: center"><a href="https://www.facebook.com/yallakhartoumsudan/">facebook</a> <a href="https://www.instagram.com/yallakhartoum/">instagram</a><br>
+                        <a href="mailto:yallakhartoum@gmail.com">yallakhartoum@gmail.com</a>
+                    </p>
+                </div>
+            </section>
+            </div>
+        </div>
+        <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.fullPage.min.js" type="text/javascript"></script>
+        <script src="scripts/isotope.pkgd.min.js"></script>
+        <script src="scripts/main-v2.js" type="text/javascript"></script>
+    </body>
+</html>

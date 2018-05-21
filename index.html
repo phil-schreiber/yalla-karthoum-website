@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Yalla Karthoum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css?family=Karla:700);
+            *{
+                margin:0;
+                padding:0;
+            }
+            html,body{
+                width:100%;
+                height:100%;
+                min-height:100%;
+                font-family: "Karla",sans-serif;
+                font-size: 6.5vw;
+                color:#fff;
+                position:relative;
+                
+            }
+            
+            body{
+                background:#f1adb2;
+                transition: background 1s ease;
+            }
+            
+            p{
+                margin-bottom: 3vh;
+            }
+            .infiniteScroll,.jscroll-inner,.jscroll-added{
+               position:relative;
+               line-height: 1.2em;
+               height:100%;
+            }
+            
+            #content p.small{
+                font-size:2vw;
+                line-height: 1em;
+            }
+           /* .pink{
+                background-color:#f0acb2;
+            }
+            .green{
+                background-color:#84eccf;
+            }
+            .blue{
+                background-color:#7598e7;
+            }
+
+            .purple{
+                background-color:#f0bdff;
+            }
+            
+            .yellow{
+                background-color:#f6d270;
+            }*/
+            section.scrollitem{
+                height:100vh;
+                position:relative;
+                box-sizing: content-box;
+                padding:15vh 10vw;
+            }
+            
+            /*section img{
+               
+                max-width: 50%;
+                max-height:80%;
+            }*/
+            section.scrollitem:nth-child(odd){
+                text-align: right;
+            }
+            .social{
+                position:fixed;
+                left:-9vw;
+                top:30%;
+                z-index: 30;
+                 transform: rotate(-90deg);
+            }
+            .social a{
+                color:#fff;
+               margin-right:2vh;
+                text-decoration: none;
+                font-size: 2vw;
+                transition: color 0.2s linear;
+            }
+            .social a:hover{
+                color:rgba(255,255,255,0.6);
+            }
+            #content{
+                width:100%;
+                text-align: center;
+                position:relative;
+                z-index: 20;
+            }
+            #content article{
+                
+                margin-left:auto;
+                margin-right:auto;
+                text-align: center;
+            }
+            #main{
+                height:100%;
+                overflow-y: scroll;
+                position:relative;
+                -webkit-overflow-scrolling: touch;
+  	
+            }
+            #imageContainer{
+                position:fixed;
+                width:97%;
+                height:100%;
+            }
+            .small{
+                
+                
+            }
+            
+            @media (orientation: portrait) { 
+                html,body{
+                font-size: 10vw;
+                }
+                .social a{
+                    font-size:5vw;
+                }
+                .social{
+                    left:-20vw;
+                }
+                #content article{
+                    width:50vw;
+                }
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+       
+        <div class="infiniteScroll">
+            
+        <section id="main">
+            <div class="social"><a href="#">facebook</a> <a href="#">instagram</a></div>
+            <div id="imageContainer">
+                
+            </div>
+            <div id="content">
+                <article>
+                <h1>Yalla!<br>Khartoum</h1>
+                <p>is a<br> community<br> of people<br> coming<br> together<br> to support<br>and<br> celebrate<br> urban arts<br> and<br> youth<br> cultures<br>in the<br>context<br> of an<br> intercultural<br> exchange.                     
+                </p>
+                <p class="small">If you want to know more about<br>
+                    who we are and what we do, visit us<br>
+                    on Facebook or Instagram. If you<br>
+                    want to support us, send a message<br>
+                    to <a href="mailto:yalla.khartoum@gmail.com" style="color:#fff;">yalla.khartoum@gmail.com</a></p>
+                
+                    <br><br>
+               </article>  
+                <iframe src="https://player.vimeo.com/video/169258137?title=0&byline=0&portrait=0" style="width:90vw;height:50.6vw;margin-left:auto;margin-right:auto;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <article>
+                    <p class="small">Yalla Khartoum 2015 Recap</p>
+                    <p><br><br></p>
+            </article>
+            </div>
+        </section>
+        
+        
+            
+            
+        </div>
+        
+        
+        
+        <script src="scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+         <script src="scripts/jquery.color.js" type="text/javascript"></script>
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </body>
+</html>
